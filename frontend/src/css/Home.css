@@ -1,0 +1,12 @@
+.home-container {
+    background-image: url('../assets/imagen1.png'); 
+    background-color: #f0f0f0;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  

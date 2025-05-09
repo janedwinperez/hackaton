@@ -1,0 +1,111 @@
+.menu {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* El menú ocupa todo el ancho de la pantalla */
+  }
+  
+  .menu-logo {
+    max-height: 50px;
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+  
+  .menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1; /* Permite que la lista se expanda */
+    justify-content: flex-end; /* Alinea los elementos al final */
+  }
+  
+  .menu-item {
+    margin: 0 15px;
+  }
+  
+ .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 15px 20px;
+}
+
+.menu-logo {
+  height: 40px;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  margin-left: 20px;
+  position: relative; /* Para posicionar el submenu */
+}
+
+.menu-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  display: block; /* Para que ocupe todo el ancho del item */
+  padding: 10px 0; /* Añade un poco de espacio vertical */
+}
+
+.menu-link:hover {
+  color: #f00;
+}
+
+/* Estilos para el submenu */
+.has-submenu {
+  cursor: pointer;
+}
+
+.submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%; /* Lo coloca justo debajo del item "Servicios" */
+  left: 0;
+  background-color: #444;
+  border-radius: 4px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10; /* Asegura que esté por encima de otros elementos */
+  display: none; /* Oculto por defecto */
+  min-width: 150px; /* Ancho mínimo del submenu */
+}
+
+.has-submenu.open .submenu {
+  display: block; /* Muestra el submenu cuando la clase 'open' está activa */
+}
+
+.submenu-item {
+  padding: 10px 15px;
+}
+
+.submenu-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.submenu-link:hover {
+  background-color: #555;
+}
