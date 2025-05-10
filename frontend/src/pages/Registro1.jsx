@@ -16,7 +16,6 @@ function Registro1() {
           <input type="email" id="email" name="email" className="form-control" />
         </div>
         <button type="submit" className="btn btn-primary">Registrar</button>
-        <a href="https://127.0.0.1:5173"><button>Regresar</button></a>
       </form>
     </div>
   );
