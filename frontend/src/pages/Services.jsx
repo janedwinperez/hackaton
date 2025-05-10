@@ -1,5 +1,12 @@
+import Menu from './Menu'
+
 function Services(){
-    return <h1>Pagina Services</h1>
+    return (
+        <div>
+            <Menu />
+            <h1>Services</h1>
+        </div>
+    )
 }
   
 export default Services

@@ -39,7 +39,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services'
-import Menu from './pages/Menu'
+import Registro1 from './pages/Registro1'
 
 
 
@@ -48,13 +48,11 @@ const App = () => {
   return (
     <Router>
       <div className="container-fluid"> {/* Añadido container-fluid de Bootstrap */}
-        <div className="d-flex justify-content-center">
-            <Menu />
-        </div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/registro1" element={<Registro1 />} />
         </Routes>
       </div>
     </Router>

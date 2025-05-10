@@ -1,11 +1,10 @@
-import './Registro1.css'; // Importa el CSS para Registro1
+
 
 // Nuevo componente Registro1
 function Registro1() {
   return (
     <div className="registro1-container">
-      <h1>Formulario de Registro 1</h1>
-      <p>Este es el contenido del formulario de Registro 1.</p>
+      <h1>Formulario Agricultores</h1>
       {/* Aquí puedes agregar los campos del formulario */}
       <form>
         <div className="form-group">

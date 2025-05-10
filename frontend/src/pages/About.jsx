@@ -1,5 +1,13 @@
+import Menu from './Menu'
+
 function About(){
-    return <h1>Pagina About</h1>
+    return (
+        <div>
+            <Menu />
+            <h1>About</h1>
+        </div>
+       
+    )
 }
   
 export default About

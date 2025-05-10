@@ -1,10 +1,12 @@
 import '../css/Home.css'
+import Menu from './Menu'
 
 function Home(){
     return (
         <div className="home-container">
-          <h1>AgroContacto</h1>
-          <p>Bienvenido a nuestra aplicación</p>
+            <Menu />
+            <h1>AgroContacto</h1>
+            <p>Bienvenido a nuestra aplicación</p>
         </div>
       );
 }
