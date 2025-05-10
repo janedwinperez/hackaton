@@ -18,6 +18,10 @@ function Menu() {
         </li>
         <li className="menu-item">
           <Link to="/services" className="menu-link">Services</Link>
+          <ul>
+            <li>Registro Agricultores</li>
+            <li>Registro Clientes</li>
+          </ul>
         </li>
       </ul>
     </nav>
