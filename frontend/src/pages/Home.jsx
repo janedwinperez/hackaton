@@ -5,7 +5,6 @@ function Home(){
     return (
         <div className="home-container">
             <Menu />
-            <p>Bienvenido a nuestra aplicación</p>
         </div>
       );
 }
