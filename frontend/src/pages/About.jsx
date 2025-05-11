@@ -1,12 +1,12 @@
 import Menu from './Menu'
 
 function About(){
-    return (
+
+    return(
         <div>
             <Menu />
             <h1>About</h1>
         </div>
-       
     )
 }
   
