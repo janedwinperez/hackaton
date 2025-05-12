@@ -1,3 +1,15 @@
-.titulo {
-    margin: auto;
+.principal_home {
+    background-image: url('../assets/cafetal_horizontal.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
