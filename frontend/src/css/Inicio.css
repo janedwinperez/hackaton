@@ -1,0 +1,27 @@
+header {
+    background-color: aqua;
+}
+
+#contenido {
+    display: flex;
+}
+
+#contenido div {
+    margin: 10px;
+}
+
+footer {
+    background-color: bisque;
+}
+
+.redsocial {
+    display: flex;
+}
+
+.redsocial img {
+    width: 20px;
+    height: 20px;
+}
+
+
+

@@ -1,5 +1,6 @@
 .principal_home {
     background-image: url('../assets/cafetal_horizontal.jpeg');
+    background-color: transparent;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
