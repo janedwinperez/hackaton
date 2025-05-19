@@ -5,6 +5,7 @@ import tecnologias2 from '../assets/tecnologias2.jpg'
 import facebookico from '../assets/facebook_icon.png'
 import gmailico from '../assets/gmail_icon.png'
 import logo from '../assets/logo_coffee_tech-removebg-preview.png'
+import google from '../assets/google_icon.png'
 
 
 
@@ -32,8 +33,19 @@ function Inicio(){
                 </main>
                 <aside>
                     <div>Formulario de registro</div>
+                    <div>
+                        <button>
+                            <div>
+                                <p>Enter with Google</p>
+                            </div>
+                            <div>
+                                <img src={google} alt='image' />
+                            </div>
+                        </button>
+                    </div>
                 </aside>
             </div>
+
 
             <footer> 
                 <div className='redsocial'>

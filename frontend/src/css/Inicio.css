@@ -23,5 +23,11 @@ footer {
     height: 20px;
 }
 
+aside img {
+    width: 20px;
+    height: 20px;
+}
 
-
+aside button {
+    display: flex;
+}
