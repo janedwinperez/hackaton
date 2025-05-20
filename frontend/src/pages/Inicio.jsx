@@ -8,12 +8,17 @@ import logo from '../assets/logo_coffee_tech-removebg-preview.png'
 import google from '../assets/google_icon.png'
 
 
+import { GoogleOAuthProvider } from '@react-oauth/google'
+
+
+
 
 function Inicio(){
 
     const arrayimagenes = [tecnologias1, tecnologias2];
     const [indice, setIndice] = useState(0);
     const [imagenActual, setImagenActual] = useState(arrayimagenes[0]);
+
 
     const handleClick = () => {
         const siguienteIndice = (indice + 1) % arrayimagenes.length;
@@ -34,6 +39,7 @@ function Inicio(){
                 <aside>
                     <div>Formulario de registro</div>
                     <div>
+                        <GoogleOAuthProvider clientId='930968964447-2p2rck5hcbiapqbgl8ukb33so9h1dda7.apps.googleusercontent.com'>
                         <button>
                             <div>
                                 <p>Enter with Google</p>
@@ -42,6 +48,7 @@ function Inicio(){
                                 <img src={google} alt='image' />
                             </div>
                         </button>
+                        </GoogleOAuthProvider>
                     </div>
                 </aside>
             </div>
