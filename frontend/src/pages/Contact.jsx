@@ -1,4 +1,6 @@
+// https://www.w3schools.com/html/html_tables.asp
 import Menu from './Menu'
+import '../css/Contact.css'
 
 function Contact(){
 
@@ -21,7 +23,9 @@ function Contact(){
                     <div>
                         <label htmlFor='mensaje'>Mensaje:</label>
                         <textarea name='mensaje' id='mensaje'></textarea>
+                    </div>
 
+                    <div>
                         <button type='submit'>Enviar</button>
                     </div>
 

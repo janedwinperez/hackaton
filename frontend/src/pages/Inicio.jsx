@@ -5,10 +5,11 @@ import tecnologias2 from '../assets/tecnologias2.jpg'
 import facebookico from '../assets/facebook_icon.png'
 import gmailico from '../assets/gmail_icon.png'
 import logo from '../assets/logo_coffee_tech-removebg-preview.png'
-import google from '../assets/google_icon.png'
+//import google from '../assets/google_icon.png'
 
 
-import { GoogleOAuthProvider } from '@react-oauth/google'
+
+import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google'
 
 
 
@@ -26,6 +27,17 @@ function Inicio(){
         setImagenActual(arrayimagenes[siguienteIndice]);
     };
 
+
+    function handleSuccess(){
+        console.log('Exito')
+    }
+
+
+    function handleError(){
+        console.log('Error')
+    }
+    
+
     return(
         <body>
             <header>
@@ -40,14 +52,7 @@ function Inicio(){
                     <div>Formulario de registro</div>
                     <div>
                         <GoogleOAuthProvider clientId='930968964447-2p2rck5hcbiapqbgl8ukb33so9h1dda7.apps.googleusercontent.com'>
-                        <button>
-                            <div>
-                                <p>Enter with Google</p>
-                            </div>
-                            <div>
-                                <img src={google} alt='image' />
-                            </div>
-                        </button>
+                            <GoogleLogin onSuccess={handleSuccess} onError={handleError}/>
                         </GoogleOAuthProvider>
                     </div>
                 </aside>
